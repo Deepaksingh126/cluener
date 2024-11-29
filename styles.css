@@ -1,0 +1,441 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --text-color: #a57419;
+    --primary-color: #de9d5c;
+    --background-color: #9F6444;
+    --light-color: #F0E3B6;
+    --dark-color: #9D6242;
+}
+
+html {
+    color: #1a1c20;
+    font-family: "Rosario", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--light-color);
+}
+
+/*nav bar style */
+
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    background-color: var(--light-color);
+    z-index: 100;
+}
+
+header i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+header i:hover {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+}
+
+nav .logo-text {
+    color: var(--text-color);
+}
+
+.full {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 100px;
+    right: -200px;
+    z-index: 100;
+    background-color: var(--light-color);
+}
+
+.full i {
+    position: absolute;
+    top: 6%;
+    right: 4vw;
+}
+
+.full li {
+    list-style: none;
+    padding: 8px;
+}
+
+.full li a {
+    text-decoration: none;
+    display: block;
+    color: #1a1c20;
+    padding: 8px;
+    border-radius: 20px;
+    color: var(--text-color);
+}
+
+.full li a:hover {
+    background-color: var(--primary-color);
+}
+
+/* first section styling */
+.sec-1 {
+    min-height: 100vh;
+}
+
+.sec-1 .text h1 {
+    padding-top: 100px;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: lowercase;
+    color: var(--light-color);
+}
+
+.sec-1 .text button {
+    width: 125px;
+    height: 50px;
+    margin: 20px 0px 0px 0px;
+    border: 2px solid var(--light-color);
+    border-radius: 4px;
+    color: var(--light-color);
+    transition: 0.5s;
+}
+
+.sec-1 .img img {
+    height: 100%;
+}
+
+.sec-1 .text button:hover {
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+
+.sec-1 .text button i {
+    width: 100%;
+    height: 100%;
+}
+
+/* second section styling */
+/* tailwind css had been applied */
+.sec-2 {
+    min-height: 100vh;
+    background-color: var(--light-color);
+}
+
+.sec-2 p {
+    color: var(--dark-color);
+}
+
+.sec-2 h2 {
+    color: var(--dark-color);
+}
+
+/* third section styling */
+
+.sec-3 {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--dark-color);
+    padding-bottom: 3vh;
+}
+
+.sec-3 h2 {
+    color: var(--light-color);
+    text-align: center;
+    font-size: 3em;
+}
+
+.sec-3 .pro-container {
+    padding: 2vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sec-3 .pro-container .product {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-3 .pro-container .product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.sec-3 .pro-container .product h3 {
+    margin: 10px 0px 20px 0px;
+    color: var(--light-color);
+    font-size: 1.5em;
+}
+
+.sec-3 .pro-container .product p {
+    color: var(--light-color);
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    white-space: wrap;
+}
+
+.sec-3 .pro-container .product button {
+    margin-top: 20px;
+    width: 80%;
+    background-color: var(--light-color);
+    height: 40px;
+    border-radius: 20px;
+}
+
+.sec-3 .pro-container .product button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* fourth section styling */
+
+.sec-4 {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--dark-color), var(--light-color));
+    display: flex;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8%;
+}
+
+.sec-4 p {
+    color: var(--light-color);
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sec-4 p span {
+    color: var(--dark-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* fifth section styling */
+
+.sec-5 {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--light-color);
+    padding: 4vw;
+}
+
+.sec-5 h3 {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.sec-5 h2 {
+    font-size: 2em;
+    color: var(--text-color);
+    margin: 2vh 0px;
+}
+
+.sec-5 .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sec-5 .container .img {
+    width: 400px;
+    height: 100%;
+}
+
+.sec-5 .container .img img {
+    width: 100%;
+    height: 400px;
+}
+
+.sec-5 .container .text {
+    min-width: 400px;
+    max-width: 50%;
+    height: 100%;
+    align-self: flex-start;
+    padding-right: 20vw;
+}
+
+.sec-5 .container .text h3 {
+    margin: 30px 0px 10px 0px;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+
+/* form page styling */
+
+.contact-form {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff41;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    display: none;
+    z-index: 101;
+}
+
+.contact-form form {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.contact-form h2 {
+    font-size: 22px;
+    text-align: center;
+    color: var(--dark-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 2px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.contact-form select option {
+    font-weight: 500;
+}
+
+.contact-form select .soap {
+    background-color: var(--light-color);
+    color: #1a1c20;
+}
+
+.contact-form select .spray {
+    background-color: #f9e7a2;
+}
+
+.contact-form select .candles {
+    background-color: #faf1cc;
+}
+
+.contact-form select .jute-bag {
+    background-color: cornsilk;
+}
+.contact-form select .tape {
+    background-color: #f5f1e3c0;
+}
+
+.contact-form button:hover {
+    background-color: var(--dark-color);
+}
+
+.contact-form i {
+    position: absolute;
+    top: 10px;
+    right: 5vw;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 50%;
+}
+
+.contact-form i:hover {
+    background-color: var(--dark-color);
+}
+
+/* footer styling */
+footer {
+    background-color: var(--dark-color);
+}
+
+/* advance styles */
+
+/* ::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;   
+} */
